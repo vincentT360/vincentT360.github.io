@@ -139,19 +139,20 @@
           </div>
         </div>
 
-      <!--
-        Portfolio Item 2
+      
+        <!--Portfolio Item 2-->
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
               <div class="portfolio-item-caption-content text-center text-white">
                 <i class="fas fa-plus fa-3x"></i>
+                <p> Class Projects </p>
               </div>
             </div>
-            <img class="img-fluid" src="img/portfolio/cake.png" alt="">
+            <img class="img-fluid" src="img/portfolio/UciAnteater.png" alt="">
           </div>
         </div>
-
+      <!--
         Portfolio Item 3
         <div class="col-md-6 col-lg-4">
           <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
@@ -350,7 +351,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8">
                 <!-- Portfolio Modal - Title -->
-                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Tasty Cake</h2>
+                <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">UCI Class Projects</h2>
                 <!-- Icon Divider -->
                 <div class="divider-custom">
                   <div class="divider-custom-line"></div>
@@ -360,9 +361,47 @@
                   <div class="divider-custom-line"></div>
                 </div>
                 <!-- Portfolio Modal - Image -->
-                <img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">
+                <!--<img class="img-fluid rounded mb-5" src="img/portfolio/cake.png" alt="">-->
                 <!-- Portfolio Modal - Text -->
-                <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
+                <p class="mb-5">
+                  Here are some of the class projects that I have done at UCI. For academic honesty reasons, I cannot post a GitHub link.
+
+                  </p>
+                    <b>Hash Table (C++):</b>
+                    I wrote an authentication service that acted as a hash map from scratch. 
+                    It kept track of username/password combinations, ensured those combinations are valid, and reported the on number of unique combinations.
+                    To operate, it read input from stdin and provided error checking to make sure the user did not input anything incorrectly.
+                    For the buckets, I implemented a linked-list.
+                    Additionally, we were also tasked with effectively managing dynamically allocated memory. 
+                  </p>
+                  <p>
+                    <b>BooEdit Text Editor (C++):</b>
+                    Created a basic text editor using the command pattern while being provided the editor model by the professor.
+                    Implemented the use of inheritance and a stack to keep track of user commands so we could undo/redo them.
+                    Some commands that were implemented include: cursor up, delete line, undo, redo, new line etc...
+                  </p>
+                  <p>
+                    <b>Stock Analyzer (Python):</b>
+                    Using the IEX API we created a program that allowed the user to do an analysis of a company's stock within their chosen range.
+                    We designed indicators for analysis such as: the true range of a stock (high-low), the stock's N-day simple moving average, and a N-day directional indicator.
+                    Our analysis gave users a suggestion whether to buy or sell for that given range such as telling a user to buy the stock if the closing price on a particular day has crossed above the simple moving average.
+                  </p>
+
+                  <p>
+                    <b>Connect 4 Game (Python):</b> 
+                    Using provided Connect 4 logic, I created the interface for a networked version of Connect 4 such as drawing out the board, deciding which column to drop it in and so forth. 
+                    This version allowed you to play against a server set up by my professor.
+                    We used the server's protocol to send and receive moves.
+                  </p>
+                  
+                  <p>
+                    <b>Sega Columns PyGame (Python):</b> 
+                    Created a graphical game using the PyGame library. 
+                    This game works similar to Tetris and Bejeweled in which there was a column of 3 jewels falling and you were able to rotate and move them on a board.
+                    I created the logic for the game board and the ability to move these fallers across the board.
+                  </p>
+                    
+                </p>
                 <button class="btn btn-primary" href="#" data-dismiss="modal">
                   <i class="fas fa-times fa-fw"></i>
                   Close Window
