@@ -1,1 +1,33 @@
-<h1>Hello Worlds</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main>
+        <select id="direction">
+            <option value="CADtoUSD" selected> CAD->USD </option>
+            <option value="USDtoCAD"> USD->CAD </option>
+        </select>
+
+        <br>
+
+        <label id="fxrateLabel"></label>
+        <input type="number" id="fxrate"/>
+
+        <br>
+        
+        <label id="sourceCurrencyLabel"></label>
+        <input type="number" id="sourceCurrencyInput" size="5"/>
+        
+        <br>
+
+        <p id="targetCurrencyOutput"></p>
+
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
