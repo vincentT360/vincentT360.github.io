@@ -8,20 +8,26 @@
   </head>
   <body>
     <main>
-        <select id="direction">
-            <option value="CADtoUSD" selected> CAD->USD </option>
-            <option value="USDtoCAD"> USD->CAD </option>
-        </select>
-
-        <br>
-
-        <label id="fxrateLabel"></label>
-        <input type="number" id="fxrate"/>
+        <label id="fxrateLabel">CAD->USD FX Rate</label>
+        <input type="number" id="fxrate" placeholder="0.7364"/>
 
         <br>
         
-        <label id="sourceCurrencyLabel"></label>
-        <input type="number" id="sourceCurrencyInput" size="5"/>
+        <label>Item in CAD</label>
+        <input type="number" id="itemInCADInput" size="5"/>
+
+        <br>
+        
+        <p id="itemInCADConverted"></p>
+        
+        <br>
+
+        <label>Item in USD</label>
+        <input type="number" id="itemInUSDInput" size="5"/>
+        
+        <br>
+        
+        <p id="itemInUSDAfterTax"></p>
         
         <br>
 
